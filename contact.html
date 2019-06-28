@@ -1,86 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="image/jpg" href="img/lain.jpg">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400&display=swap" rel="stylesheet">
-
-    <title>Carlgo11.com</title>
-</head>
-<body>
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <div class="row" id="navbar-table">
-            <div class="col">
-                <a class="" href="./">Home</a>
-            </div>
-            <div class="col">
-                <a class="" href="https://github.com/Carlgo11">Github</a>
-            </div>
-            <div class="col">
-                <a class="" href="https://twitter.com/carlgo11">Twitter</a>
-            </div>
-            <div class="col">
-                <a class="" href="">Contact</a>
-            </div>
-            <div class="col">
-                <a class="" href="about.html">About</a>
-            </div>
-        </div>
-    </div>
-</nav>
-
-<div class="container">
-
-    <div class="content-head col-12 noselect">
-        <div>
-            <picture id="avatar">
-                <source srcset="img/lain.webp" type="image/webp">
-                <!--                <source srcset="https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://carlgo11.com/lain.gif" type="image/gif">-->
-                <img src="img/lain.png" alt="avatar">
-            </picture>
-            <h1 id="title" class="noselect">Carlgo11</h1>
-        </div>
+---
+layout: default
+title: Contact
+---
+<form class="col-12 col-md-6">
+    <div class="">
+        <label for="name">Name:</label>
+        <input class="" type="text" id="name" autocomplete="name" placeholder="" required>
     </div>
 
-    <div class="content-body">
-        <form class="col-12 col-md-6">
-            <div class="">
-                <label for="name">Name:</label>
-                <input class="" type="text" id="name" autocomplete="name" placeholder="" required>
-            </div>
-
-            <div class="">
-                <label for="email">Email address:</label>
-                <input class="" type="email" id="email" autocomplete="email" placeholder="" required>
-            </div>
-
-            <div class="">
-                <label for="subject">Subject:</label>
-                <input class="" type="text" id="subject" placeholder="" required>
-            </div>
-
-            <div class="">
-                <label for="message">Message:</label>
-                <textarea class="" id="message" col="40" rows="10" required></textarea>
-            </div>
-
-            <div class="">
-                <button type="submit" class=" btn btn-lg bg-success">Send</button>
-            </div>
-        </form>
+    <div class="">
+        <label for="email">Email address:</label>
+        <input class="" type="email" id="email" autocomplete="email" placeholder="" required>
     </div>
 
+    <div class="">
+        <label for="subject">Subject:</label>
+        <input class="" type="text" id="subject" placeholder="" required>
+    </div>
+
+    <div class="">
+        <label for="message">Message:</label>
+        <textarea class="" id="message" col="40" rows="10" required></textarea>
+    </div>
+
+    <div class="">
+        <button type="submit" class=" btn btn-lg bg-success">Send</button>
+    </div>
+</form>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
-</body>
-</html>

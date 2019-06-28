@@ -1,0 +1,11 @@
+title: Carlgo11.com
+url: "carlgo11.com"
+permalink: pretty
+markdown: kramdown
+img: /img/lain.png
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - vendor
+  - .gitignore
