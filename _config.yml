@@ -1,5 +1,6 @@
 title: Carlgo11.com
 url: "carlgo11.com"
+baseurl: /carlgo11.com
 permalink: pretty
 markdown: kramdown
 img: /img/lain.png
