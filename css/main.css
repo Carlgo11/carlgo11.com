@@ -58,6 +58,7 @@ p {
     margin-bottom: 1.777em;
 }
 
+
 #navbar-table {
     width: 100%;
     text-align: center;
@@ -170,8 +171,14 @@ ul {
 }
 
 .bg-success {
-    background-success: #5cb85c;
+    background-color: #5cb85c;
     color: #eee;
+}
+
+.post-title {
+    color: #5cb85c;
+    font-weight: 300;
+    font-size: 3rem;
 }
 
 .btn {
@@ -180,6 +187,10 @@ ul {
 
 .btn:hover {
     color: #eee;
+}
+
+#posts-excerpts {
+    max-width: 692px;
 }
 
 input[type="text"], input[type="password"], input[type="email"], input[type="search"], textarea {

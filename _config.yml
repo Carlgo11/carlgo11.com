@@ -1,12 +1,14 @@
 title: Carlgo11.com
 url: "carlgo11.com"
 baseurl: /carlgo11.com
-permalink: pretty
+permalink: /:year/:month/:title/
 markdown: kramdown
 img: /img/lain.png
+excerpt_separator: //description
 exclude:
   - Gemfile
   - Gemfile.lock
   - Rakefile
   - vendor
   - .gitignore
+  - .idea
