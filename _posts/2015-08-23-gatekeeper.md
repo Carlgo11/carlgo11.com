@@ -1,6 +1,5 @@
 ---
-layout: post
-published: true
+category: reviews
 ---
 ### What is GateKeeper?
 
