@@ -3,12 +3,16 @@ layout: default
 ---
 
 <div id="posts-excerpts">
-{% for post in site.posts %}
+  {% for post in site.posts %}
   <div class="post-excerpt">
     <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-    <p>{{ post.excerpt | truncatewords: 50 }}</p>
+    <p>{{ post.excerpt | truncatewords: 80 }}</p>
   </div>
-  <a href="{{ site.baseurl }}{{ post.url }}"><div class="post-link"><div class="bg-success">Read more</div></div></a>
+  <a href="{{ site.baseurl }}{{ post.url }}">
+    <div class="post-link">
+      <div class="">Read more</div>
+    </div>
+  </a>
 
   {% endfor %}
 </div>
