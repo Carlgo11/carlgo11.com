@@ -60,6 +60,10 @@ a:visited {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 a {
   color: rgb(92, 184, 92);
 }
@@ -237,4 +241,28 @@ label {
   line-height: 1.777;
   font-weight: 400;
   color: #3f424a;
+}
+
+.post-excerpt {
+  /*margin-bottom: 10vh;*/
+  margin-bottom: 0;
+}
+
+.post-title {
+  text-align: center;
+}
+
+.post-link {
+  border-top: 2px #1b1f23 solid;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.post-link > div {
+  max-width: max-content;
+  padding: 6px;
+  border: 2px #1b1f23 solid;
+  border-top: 0;
+  text-decoration: none;
+  margin: -2px auto 15vh;
 }
