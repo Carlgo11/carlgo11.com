@@ -1,0 +1,18 @@
+
+#membership-logos > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#project-list > li {
+  margin-top: 5px;
+}
+
+#project-list > li > a {
+  color: rgb(92, 184, 92);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+

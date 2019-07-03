@@ -1,29 +1,61 @@
 ---
 layout: default
 title: Contact
+
 ---
-<form class="col-12 col-md-6">
-    <div class="">
+<div class="row">
+  <div class="col-12 col-md-6">
+    <form class="">
+      <div class="">
         <label for="name">Name:</label>
         <input class="" type="text" id="name" autocomplete="name" placeholder="" required>
-    </div>
+      </div>
 
-    <div class="">
+      <div class="">
         <label for="email">Email address:</label>
         <input class="" type="email" id="email" autocomplete="email" placeholder="" required>
-    </div>
+      </div>
 
-    <div class="">
+      <div class="">
         <label for="subject">Subject:</label>
         <input class="" type="text" id="subject" placeholder="" required>
-    </div>
+      </div>
 
-    <div class="">
+      <div class="">
         <label for="message">Message:</label>
         <textarea class="" id="message" col="40" rows="10" required></textarea>
+      </div>
+
+      <div class="">
+        <button type="submit" class="btn btn-lg bg-success col-3">Send</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <div id="contact-info">
+      <h3>Other contact info</h3>
+      <ul>
+
+        <a href="https://twitter.com/carlgo11">
+          <li id="twitter-handle" class="brand-logo">@Carlgo11</li>
+        </a>
+
+        <a href="https://github.com/carlgo11">
+          <li id="github-handle" class="brand-logo">@Carlgo11</li>
+        </a>
+
+        <a href="https://keybase.io/carlgo11">
+          <li id="keybase-handle" class="brand-logo">@Carlgo11</li>
+        </a>
+
+        <a href="https://reddit.com/u/carlgo11">
+          <li id="reddit-handle" class="brand-logo">@Carlgo11</li>
+        </a>
+
+      </ul>
     </div>
 
-    <div class="">
-        <button type="submit" class=" btn btn-lg bg-success">Send</button>
-    </div>
-</form>
+  </div>
+
+</div>
