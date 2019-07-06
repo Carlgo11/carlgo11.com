@@ -13,6 +13,10 @@
   margin: 5px 5px 5px 0;
 }
 
+.brand-logo {
+  color: #212529;
+}
+
 .brand-logo::before {
   margin-right: 10px;
   font-family: 'Font Awesome 5 Brands';

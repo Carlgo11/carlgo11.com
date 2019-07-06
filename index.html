@@ -1,23 +1,29 @@
 ---
 layout: default
 ---
+<div class="row">
 
-<div id="posts-excerpts" class="col">
+  <div id="posts-excerpts" class="col">
 
-  {% for post in site.posts %}
+    {% for post in site.posts %}
 
-  <div class="post-excerpt">
-    <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-    <p>{{ post.excerpt | truncatewords: 80 }}</p>
-  </div>
-  <a href="{{ site.baseurl }}{{ post.url }}">
-    <div class="post-link">
-      <div class="">Read more</div>
+    <div class="post-excerpt">
+      <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <p>{{ post.excerpt | truncatewords: 80 }}</p>
     </div>
-  </a>
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <div class="post-link">
+        <div class="">Read more</div>
+      </div>
+    </a>
 
-  {% endfor %}
+    {% endfor %}
 
-</div>
-<div class="col-3">
+  </div>
+
+  <div class="col-5">
+    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/carlgo11?ref_src=twsrc%5Etfw"/>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+
 </div>
