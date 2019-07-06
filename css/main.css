@@ -91,6 +91,7 @@ code, pre {
 
 ul {
   padding-inline-start: 1em;
+  margin-bottom: 0;
 }
 
 input[type="text"], input[type="password"], input[type="email"], input[type="search"], textarea {
@@ -139,6 +140,11 @@ label {
   background-color: rgba(255, 255, 255, 0.9);
   min-height: 100vh;
   padding: 2rem 3.07202761% 3.07202761%;
+  margin: 0 0;
+
+}
+
+.content-body .row {
 }
 
 /* Avatar */
@@ -176,6 +182,9 @@ label {
   text-align: center;
   color: white;
   display: flex;
+}
+#navbar-table li {
+  display: block;
 }
 
 #navbar-table a {
@@ -241,6 +250,7 @@ article {
 
 #posts-excerpts {
   max-width: 692px;
+  /*margin: 0 auto;*/
 }
 
 .post-title {
@@ -262,7 +272,7 @@ article {
   pointer-events: none;
   background-image: linear-gradient(to bottom,
   rgba(92, 184, 92, 0),
-  rgba(92, 184, 92, 1) 90%);
+  rgba(92, 184, 92, 1) 80%);
   width: 100%;
   height: 3em;
 }
@@ -277,7 +287,7 @@ article {
 }
 
 .post-link > div {
-  background: rgba(92, 184, 92, 1);
+  background: #5cb85c;
   color: white;
   max-width: max-content;
   padding: 6px;
