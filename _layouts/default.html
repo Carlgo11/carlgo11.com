@@ -13,7 +13,8 @@
   <link rel="icon" type="image/webp" href="{{ site.baseurl }}/img/favicon/lain_64px.webp" sizes="64x64">
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon/lain_512px.png" sizes="512x512">
   <link rel="icon" type="image/webp" href="{{ site.baseurl }}/img/favicon/lain_512px.webp" sizes="512x512">
-  <!--  <link rel="icon apple-touch-icon" type="image/png"  href="{{ site.baseurl }}/img/favicon/lain_180px.png" sizes="180x180">-->
+  <link rel="icon apple-touch-icon" type="image/png" href="{{ site.baseurl }}/img/favicon/lain_180px.png"
+        sizes="180x180">
   <link rel="icon apple-touch-icon" type="image/webp" href="{{ site.baseurl }}/img/favicon/lain_180px.webp"
         sizes="180x180">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
@@ -30,9 +31,10 @@
   <title> {% if page.title %}{{ page.title}} / {%endif%}{{ site.title }}</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark" id="desktop-navbar">
   <div class="container">
-    <ul class="row" id="navbar-table">
+    <ul class="row navbar-table">
       <li class="col">
         <a class="" href="{{ site.baseurl }}/">Home</a>
       </li>
@@ -49,6 +51,35 @@
         <a class="" href="{{ site.baseurl }}/about/">About</a>
       </li>
     </ul>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark" id="mobile-navbar">
+  <div class="container">
+    <button class="navbar-toggler noselect" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="row navbar-nav mr-auto navbar-table">
+        <li class="col nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
+        </li>
+        <li class="col nav-item">
+          <a class="nav-link" href="https://github.com/Carlgo11">Github</a>
+        </li>
+        <li class="col nav-item">
+          <a class="nav-link" href="https://twitter.com/carlgo11">Twitter</a>
+        </li>
+        <li class="col nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/contact/">Contact</a>
+        </li>
+        <li class="col nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/about/">About</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 
@@ -69,7 +100,8 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
+        type="text/javascript"></script>
 <script src="{{ site.baseurl }}/js/modenizr-webp.js" type="text/javascript"></script>
 </body>
 </html>

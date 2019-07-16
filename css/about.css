@@ -15,4 +15,6 @@
   font-size: 18px;
   line-height: 32px;
 }
-
+#body {
+  margin: 0 auto;
+}
