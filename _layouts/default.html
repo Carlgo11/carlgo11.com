@@ -31,33 +31,11 @@
   {% endif %}
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
-  <title> {% if page.title %}{{ page.title}} / {%endif%}{{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title}} / {%endif%}{{ site.title }}</title>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark" id="desktop-navbar">
-  <div class="container">
-    <ul class="row navbar-table">
-      <li class="col">
-        <a class="" href="{{ site.baseurl }}/">Home</a>
-      </li>
-      <li class="col">
-        <a class="" href="https://github.com/Carlgo11">Github</a>
-      </li>
-      <li class="col">
-        <a class="" href="https://twitter.com/carlgo11">Twitter</a>
-      </li>
-      <li class="col">
-        <a class="" href="{{ site.baseurl }}/contact/">Contact</a>
-      </li>
-      <li class="col">
-        <a class="" href="{{ site.baseurl }}/about/">About</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark" id="mobile-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
   <div class="container">
     <button class="navbar-toggler noselect" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

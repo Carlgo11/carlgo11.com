@@ -176,30 +176,17 @@ label {
   color: white;
 }
 
-nav {
-  min-height: 57px;
-}
 /* Navbar */
-@media only screen and (max-device-width: 992px) {
-
-  #desktop-navbar {
-    display: none;
-  }
-}
-
 @media only screen and (min-device-width: 993px) {
   nav {
     border-bottom: 7px;
     border-bottom-color: #5cb85c;
     border-bottom-style: solid;
+    height: 57px;
   }
 
   .nav-link {
     display: inline-block;
-  }
-
-  #mobile-navbar {
-    display: none;
   }
 }
 
@@ -219,7 +206,7 @@ nav {
   color: rgba(255, 255, 255, .5);
 }
 
-.navbar-table a:hover {
+.navbar-table a:hover, .navbar-dark .navbar-nav .nav-link:hover {
   color: #fff;
 }
 
