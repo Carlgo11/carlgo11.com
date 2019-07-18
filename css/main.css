@@ -295,6 +295,10 @@ article {
   text-align: center;
 }
 
+.post-title a:hover {
+  color: inherit;
+}
+
 .post-link {
   margin-top: -2rem;
   border-top: 2px #4c545b solid;
@@ -319,3 +323,4 @@ article {
 .timeline-Footer {
   display: none;
 }
+
