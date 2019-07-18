@@ -95,7 +95,7 @@ ul {
   margin-bottom: 0;
 }
 
-input[type="text"], input[type="password"], input[type="email"], input[type="search"], textarea {
+input, textarea {
   background-color: rgba(0, 0, 0, .1);
   color: #666a76;
   border: 0;
