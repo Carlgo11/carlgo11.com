@@ -9,3 +9,7 @@ gem 'html-proofer'
 gem 'jsonlint'
 gem 'kwalify'
 gem 'rake'
+
+group :jekyll_plugins do
+  gem 'octopress-minify-html'
+end

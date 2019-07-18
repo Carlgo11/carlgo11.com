@@ -12,3 +12,4 @@ exclude:
   - vendor
   - .gitignore
   - .idea
+env: production
