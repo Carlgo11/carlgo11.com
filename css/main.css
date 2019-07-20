@@ -246,9 +246,6 @@ label {
 }
 
 /* Posts & Index.html */
-article {
-  max-width: 692px;
-}
 
 .post-date::before {
   font-family: 'Font Awesome 5 Free';
@@ -262,8 +259,8 @@ article {
 }
 
 
-#posts-excerpts {
-  max-width: 700px;
+#posts-excerpts, article {
+  max-width: 780px;
   margin: 0 auto;
 }
 

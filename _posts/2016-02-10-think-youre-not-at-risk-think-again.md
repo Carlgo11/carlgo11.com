@@ -52,7 +52,7 @@ But you're probably a citizen of some country.
 
 Most countries in the world keep track of births and deaths. And while the thoroughness might vary from country to country, most countries at least write down all the names of the people involved.
 
-For example, here in Sweden they file the baby's parents' names, the baby's name, weight and height, give out the social security number and soon after, the dog tag (so that the baby in 18 years can receive his or her military uniform and be taught how to say "I surrender" in Russian (which for anyone wondering is [я подчиняюсь](https://translate.google.com/translate_tts?ie=UTF-8&q=%D1%8F%20%D0%BF%D0%BE%D0%B4%D1%87%D0%B8%D0%BD%D1%8F%D1%8E%D1%81%D1%8C&tl=ru&total=1&idx=0&textlen=12&tk=195838.316964&client=t&ttsspeed=0.24).))
+For example, here in Sweden they file the baby's parents' names, the baby's name, weight and height, give out the social security number and soon after, the dog tag (so that the baby in 18 years can receive his or her military uniform and be taught how to say "I surrender" in Russian (which for anyone wondering is [я подчиняюсь](https://translate.google.com/translate_tts?ie=UTF-8&q=%D1%8F%20%D0%BF%D0%BE%D0%B4%D1%87%D0%B8%D0%BD%D1%8F%D1%8E%D1%81%D1%8C&tl=ru&total=1&idx=0&textlen=12&tk=195838.316964&client=t&ttsspeed=0.24).)
 
 ### I'm not any of the above
 
