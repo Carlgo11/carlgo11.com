@@ -3,28 +3,34 @@ layout: default
 title: Contact
 
 ---
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="{{ site.baseurl }}/js/contact.min.js"></script>
 <div class="row">
   <div class="col-12 col-md-6">
-    <form>
+    <h1>Contact</h1>
+
+    <form id="mail-form" action="" method="POST">
       <div>
         <label for="name">Name:</label>
-        <input id="name" type="text" autocomplete="name" placeholder="" required>
+        <input id="name" name="name" type="text" autocomplete="name" placeholder="" required>
       </div>
 
       <div>
         <label for="email">Email address:</label>
-        <input id="email" type="email" autocomplete="email" placeholder="" required>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="" required>
       </div>
 
       <div>
         <label for="subject">Subject:</label>
-        <input id="subject" type="text" placeholder="" required>
+        <input id="subject" name="subject" type="text" placeholder="" required>
       </div>
 
       <div>
         <label for="message">Message:</label>
-        <textarea id="message" col="40" rows="10" required></textarea>
+        <textarea id="message" name="message" col="40" rows="10" required></textarea>
       </div>
+
+      <div class="g-recaptcha" data-sitekey="6LcLvK4UAAAAAMLelJFpPN5CFx0pn0vbMNeqjUqz"></div>
 
       <div>
         <button type="submit" class="btn btn-lg bg-success col-3">Send</button>
@@ -59,3 +65,5 @@ title: Contact
   </div>
 
 </div>
+
+
