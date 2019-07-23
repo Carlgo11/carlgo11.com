@@ -38,3 +38,10 @@
   content: '\f1a1';
 }
 
+.alert {
+  display: none;
+}
+
+.g-recaptcha {
+margin-bottom: 10px;
+}
