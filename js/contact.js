@@ -5,7 +5,7 @@ $(window).on("load", function () {
     var form = $(this);
     $.ajax({
       method: 'GET',
-      url: '/mail',
+      url: 'https://submit.carlgo11.com/',
       dataType: "text",
       cache: false,
       data: form.serialize(),

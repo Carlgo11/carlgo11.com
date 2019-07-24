@@ -38,10 +38,11 @@ function sendMail($name, $email, $subject, $message) {
 }
 
 function getInput($variable) {
+//  Use $_GET instead of filter_input() so that special chars can get decoded first.
   $input = htmlspecialchars_decode($_GET[$variable]);
   $output = filter_var($input);
   if ($output != NULL)
-    return TRUE;
+    return $output;
 }
 
 function verifyToken($token, $secret_key) {
@@ -55,16 +56,18 @@ function verifyToken($token, $secret_key) {
   }
 }
 
+
 /* ReCaptcha keys */
 $site_key = $_ENV['recaptcha-site-key'];
 $secret_key = $_ENV['recaptcha-secret-key'];
+
 
 /* User inputs */
 $name = getInput('name');
 $email = getInput('email');
 $subject = getInput('subject');
 $message = getInput('message');
-$recaptcha_token = getInput('g-recaptcha-response');
+$recaptcha_token = $_GET['g-recaptcha-response'];
 
 
 // Verify Captcha

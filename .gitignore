@@ -27,7 +27,7 @@ cmake-build-*/
 *.iws
 
 # IntelliJ
-.idea/
+*.idea/
 out/
 
 # JIRA plugin
@@ -171,3 +171,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/ruby,linux,macos,jekyll,windows,jetbrains
+*/vendor/
+*/composer.phar
+*/composer.lock
