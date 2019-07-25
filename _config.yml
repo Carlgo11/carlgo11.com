@@ -10,7 +10,8 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - vendor
-  - .gitignore
-  - .idea
   - mail
+  - .gitignore
+  - .editorconfig
+  - .idea
 env: production
