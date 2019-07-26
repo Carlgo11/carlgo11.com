@@ -11,7 +11,7 @@ body {
 }
 
 .webp body {
-  background: url("../img/img3.jpg") no-repeat center center fixed;
+  background: url("../img/img3.webp") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
