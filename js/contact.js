@@ -6,6 +6,9 @@ $(window).on("load", function () {
     console.log($(this).serialize());
     var form = $(this);
 
+$('#form-sending').show();
+$('#mail-form').hide();
+
     /* Send form data */
     $.ajax({
       method: 'GET',
@@ -15,11 +18,12 @@ $(window).on("load", function () {
       data: form.serialize(),
 
       success: function () {
+        $('#form-sending').hide();
         $('#form-success').fadeIn().alert();
-        $('#mail-form').hide();
       },
 
       error: function () {
+        $('#form-sending').hide();
         $('#form-error').fadeIn().alert();
       }
     });
