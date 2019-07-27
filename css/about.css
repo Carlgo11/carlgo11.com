@@ -2,10 +2,15 @@
   margin: 0 auto;
 }
 
-#membership-logos > div {
+#membership-logos {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+}
+
+#membership-logos > div {
+  width: 76px;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 #project-list {
@@ -37,5 +42,5 @@
 }
 
 .fa-archive {
-color: grey;
+  color: grey;
 }
