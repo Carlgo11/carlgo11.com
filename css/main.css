@@ -155,6 +155,7 @@ label {
   float: none;
   position: static;
   transition: all ease .4s;
+  height: 128px;
 }
 
 #avatar:hover {
