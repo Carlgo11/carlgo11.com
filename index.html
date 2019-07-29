@@ -1,15 +1,19 @@
 ---
 layout: default
 ---
-<div class="row">
-
+<div class="row" id="index-body">
   <div id="posts-excerpts" class="col">
+    <h2>Latest posts</h2>
+
+    <hr>
+
     {% for post in site.posts %}
 
     <div class="post-excerpt">
       <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       <p>{{ post.excerpt | truncatewords: 80 }}</p>
     </div>
+
     <a href="{{ site.baseurl }}{{ post.url }}">
       <div class="post-link">
         <div class="">Read more</div>
@@ -17,6 +21,19 @@ layout: default
     </a>
 
     {% endfor %}
+
   </div>
 
+  <div class="col-4 float-lg-right d-none d-lg-block" id="post-list">
+    <h2>All Posts</h2>
+
+    <hr>
+
+    <ul>
+      {% for post in site.posts reversed %}
+      <li><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+  </div>
 </div>

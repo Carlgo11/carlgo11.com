@@ -18,6 +18,7 @@ body {
   -o-background-size: cover;
 }
 
+/* md and lower */
 @media only screen and (max-width: 768px) {
   .no-webp body, .webp body {
     background: #eee;
@@ -27,6 +28,14 @@ body {
   .container {
     padding-right: 0 !important;
     padding-left: 0 !important;
+  }
+}
+
+/* lg and lower */
+@media only screen and (max-width: 992px) {
+
+  #posts-excerpts {
+    margin: 0 auto;
   }
 }
 
@@ -175,6 +184,7 @@ label {
   font-weight: 400;
   font-size: 3.4em;
   color: white;
+  margin-bottom: 0;
 }
 
 /* Navbar */
@@ -261,8 +271,7 @@ label {
 
 
 #posts-excerpts, article {
-  max-width: 780px;
-  margin: 0 auto;
+  max-width: 690px;
 }
 
 .post-title {
@@ -314,11 +323,24 @@ label {
   margin: -2px auto 13vh;
 }
 
-.twitter-timeline {
-  max-height: 200vh;
+#post-list {
+  padding: 0;
+  /*margin-top: 10%;*/
+  width: max-content;
 }
 
-.timeline-Footer {
-  display: none;
+#post-list ul {
+  list-style: none;
 }
 
+#post-list li {
+  height: 27px;
+}
+
+#post-list a {
+  color: #5cb85c;
+}
+
+#index-body {
+  justify-content: space-between;
+}
