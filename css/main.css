@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400');
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif, Helvetica, Arial;
 }
 
 .no-webp body {
@@ -237,12 +240,12 @@ label {
 }
 
 .bg-success {
-  background-color: #5cb85c;
+  background-color: #3ebf1b;
   color: #eee;
 }
 
 .success {
-  color: #5cb85c;
+  color: #3ebf1b;
 }
 
 .btn {
@@ -275,7 +278,7 @@ label {
 }
 
 .post-title {
-  color: #5cb85c;
+  color: #3ebf1b;
   font-weight: 300;
   font-size: 3rem;
 }
@@ -338,7 +341,7 @@ label {
 }
 
 #post-list a {
-  color: #5cb85c;
+  color: #3ebf1b;
 }
 
 #index-body {

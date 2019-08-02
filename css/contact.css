@@ -104,3 +104,7 @@
   -webkit-animation-delay: 500ms;
   -moz-animation-delay: 500ms;
 }
+
+a.bg-success:focus, a.bg-success:hover, button.bg-success:focus, button.bg-success:hover {
+  background: #21c446 !important;
+}
