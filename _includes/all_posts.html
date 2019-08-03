@@ -1,0 +1,12 @@
+<div class="col-4 float-lg-right d-none d-lg-block" id="post-list">
+  <h2>All Posts</h2>
+
+  <hr>
+
+  <ul>
+    {% for post in site.posts reversed %}
+    <li><a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+</div>
