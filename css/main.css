@@ -6,7 +6,7 @@ body {
 }
 
 .no-webp body {
-  background: url("../img/img3.jpg") no-repeat center center fixed;
+  background: url("https://res.cloudinary.com/dbsfyc1ry/image/upload/f_auto,fl_force_strip.preserve_transparency.progressive.progressive:semi.progressive:steep,q_auto:best/v1578510282/carlgo11.com/img3_r4w7ap.jpg") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -14,7 +14,7 @@ body {
 }
 
 .webp body {
-  background: url("../img/img3.webp") no-repeat center center fixed;
+  background: url("https://res.cloudinary.com/dbsfyc1ry/image/upload/f_auto,fl_force_strip.preserve_transparency.progressive.progressive:semi.progressive:steep,q_auto:good/v1578510282/carlgo11.com/img3_r4w7ap.webp") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -124,7 +124,7 @@ label {
 }
 
 .no-webp .content-head {
-  background: rgba(179, 179, 179, 0.87) url("../img/img2.png") no-repeat center center;
+  background: rgba(179, 179, 179, 0.87) url("https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive.progressive:steep,w_975,q_auto:best/v1578512011/carlgo11.com/img2_vkhcnm.jpg") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -132,7 +132,7 @@ label {
 }
 
 .webp .content-head {
-  background: rgba(179, 179, 179, 0.87) url("../img/img2.webp") no-repeat center center;
+  background: rgba(179, 179, 179, 0.87) url("https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive.progressive:steep,w_975,q_auto:good/v1578512011/carlgo11.com/img2_vkhcnm.webp") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;

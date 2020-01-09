@@ -1,0 +1,8 @@
+{% assign extensions = "png webp" | split: ' '%}
+{% assign sizes = "16 32 64 128 180 256 512" | split: ' '%}
+{% for extension in extensions %}
+{% for size_str in sizes %}
+{% assign size = size_str | plus: 0 %}
+<link rel="icon {% if size == 180 %}apple-touch-icon{%endif%}" type="image/{{extension}}" href="https://res.cloudinary.com/dbsfyc1ry/image/upload/c_scale,h_{{size}},q_auto:{% if size <= 128 %}low{%else%}good{%endif%}/v1578513410/carlgo11.com/favicons/favicon.{{extension}}" sizes="{{size}}x{{size}}">
+{% endfor %}
+{% endfor %}

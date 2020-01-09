@@ -21,16 +21,7 @@
   <link rel="preload" as="script" href="{{ site.baseurl }}/js/modenizr-webp.js">
 
   <!-- Icons -->
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon/lain_32px.png" sizes="32x32">
-  <link rel="icon" type="image/webp" href="{{ site.baseurl}}/img/favicon/lain_32px.webp" sizes="32x32">
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon/lain_64px.png" sizes="64x64">
-  <link rel="icon" type="image/webp" href="{{ site.baseurl }}/img/favicon/lain_64px.webp" sizes="64x64">
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon/lain_512px.png" sizes="512x512">
-  <link rel="icon" type="image/webp" href="{{ site.baseurl }}/img/favicon/lain_512px.webp" sizes="512x512">
-  <link rel="icon apple-touch-icon" type="image/png" href="{{ site.baseurl }}/img/favicon/lain_180px.png"
-        sizes="180x180">
-  <link rel="icon apple-touch-icon" type="image/webp" href="{{ site.baseurl }}/img/favicon/lain_180px.webp"
-        sizes="180x180">
+  {% include favicons.html %}
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
@@ -63,7 +54,7 @@
 
     <!-- Nav content -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="row navbar-nav mr-auto navbar-table">
+      <ul class="row navbar-nav mr-auto navbar-table noselect">
         <li class="col nav-item">
           <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
         </li>
@@ -90,8 +81,8 @@
   <div class="content-head col-12 noselect">
     <div>
       <picture id="avatar">
-        <source srcset="{{ site.baseurl }}/img/lain.webp" type="image/webp">
-        <img src="{{ site.baseurl }}/img/lain.png" alt="avatar">
+        <source srcset="https://res.cloudinary.com/dbsfyc1ry/image/upload/c_scale,fl_force_strip.lossy,h_128,q_auto:best/v1578513410/carlgo11.com/favicons/favicon.webp" type="image/webp">
+        <img src="https://res.cloudinary.com/dbsfyc1ry/image/upload/c_scale,fl_force_strip.lossy,q_auto:best/v1578513410/carlgo11.com/favicons/favicon.png" alt="avatar">
       </picture>
       <h1 id="title" class="noselect">Carlgo11</h1>
     </div>
