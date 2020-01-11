@@ -1,0 +1,39 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Get Cache
+      id: cache
+      uses: actions/cache@v1
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-bundler
+
+    - name: Install dependencies
+      run: |
+        snap install ruby
+        bundle install
+
+    - name: Build the site
+      run: bundle exec jekyll build --baseurl ''
+
+    - name: Deploy to GH Pages
+      if: success()
+      uses: crazy-max/ghaction-github-pages@v1
+      with:
+        target_branch: gh-pages
+        build_dir: _site
+        comitter_email: bot@users.noreply.github.com
+        fqdn: carlgo11.com
+      env:
+        GITHUB_PAT: ${{ secrets.GH_TOKEN }}  
