@@ -21,8 +21,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        snap install ruby
-        bundle install
+        sudo snap install ruby
+        bundle install --path vendor/bundle
 
     - name: Build the site
       run: bundle exec jekyll build --baseurl ''
