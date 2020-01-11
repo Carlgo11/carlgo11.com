@@ -12,6 +12,9 @@
   text-align: center;
   margin: 1rem 0;
 }
+.membership-logo {
+  height: 44px;
+}
 
 #project-list {
   display: flex;
