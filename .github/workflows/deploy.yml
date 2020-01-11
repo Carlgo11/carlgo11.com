@@ -21,7 +21,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        sudo snap install ruby
+        sudo snap install ruby --classic
         bundle install --path vendor/bundle
 
     - name: Build the site
