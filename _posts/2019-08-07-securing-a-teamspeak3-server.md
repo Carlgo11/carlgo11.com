@@ -1,6 +1,6 @@
 ---
 category: internet security
-draft: true
+layout: post
 ---
 
 After hosting a TeamSpeak3 server since 2015 I thought it would be a good idea to share  what I've learned under the years and how I keep my TS server safe.
@@ -128,7 +128,7 @@ There seems to be no client/server handshake so it's possible that the encryptio
 Still, it's better than no encryption at all.
 
 To enable voice data encryption on the server, go to Manage Virtual Server > Security > Channel voice data encryption > "Globally On".
-![voice data encryption settings](https://tempfiles.carlgo11.com/download/D5DA50560C8620/?p=ZbMn7jzHhkvLJBco53r)
+![voice data encryption settings](https://res.cloudinary.com/dbsfyc1ry/image/upload/v1578867112/carlgo11.com/posts/ts3_voip_encryption.png)
 
 ## Security Levels
 Security levels in TeamSpeak3 have nothing with actual security to do.  

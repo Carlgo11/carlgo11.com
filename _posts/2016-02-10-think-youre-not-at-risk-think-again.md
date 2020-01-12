@@ -1,6 +1,7 @@
 ---
 title: Think you're not at risk? Think again...
 category: internet security
+layout: post
 ---
 So one of the most common questions I get when I talk to non-IT-security people about user security online is "Why should I care? I'm not a target."
 

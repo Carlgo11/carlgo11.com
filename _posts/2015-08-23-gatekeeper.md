@@ -1,6 +1,7 @@
 ---
 category: reviews
 title: GateKeeper
+layout: post
 ---
 ### What is GateKeeper?
 

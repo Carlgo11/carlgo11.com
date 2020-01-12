@@ -1,5 +1,6 @@
 ---
 category: internet security
+layout: post
 ---
 <p class="lead">Google recently posted <a href="http://googleonlinesecurity.blogspot.com/2015/07/new-research-comparing-how-security.html">an article</a> comparing how security experts and normal people stay safe online.</p>
 

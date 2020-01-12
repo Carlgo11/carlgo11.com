@@ -1,5 +1,6 @@
 ---
 category: internet security
+layout: post
 ---
 As you might know already, yesterday [Patreon](https://www.patreon.com/) discovered they had been breached and personal information such as email addresses, shipping addresses, posts, names and password hashes were compromised.
 

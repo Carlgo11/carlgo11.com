@@ -1,6 +1,5 @@
 title: Carlgo11.com
 url: "carlgo11.com"
-baseurl: /carlgo11.com
 permalink: /:year/:month/:title/
 markdown: kramdown
 img: /img/lain.png
