@@ -132,7 +132,7 @@ label {
 }
 
 .webp .content-head {
-  background: rgba(179, 179, 179, 0.87) url("https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive.progressive:steep,w_975,q_auto:good/v1578963377/carlgo11.com/img4_oac3tc.webp") no-repeat center center;
+  background: rgba(179, 179, 179, 0.87) url("https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive.progressive:steep,q_auto:good/v1578963377/carlgo11.com/img4_oac3tc.webp") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
