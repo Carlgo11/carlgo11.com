@@ -22,7 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo snap install ruby --classic
-        npm i babel-minify
+        sudo npm i babel-minify -g
         bundle install --path vendor/bundle
 
     - name: Build the site
