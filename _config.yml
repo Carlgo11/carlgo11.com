@@ -10,7 +10,12 @@ exclude:
   - Rakefile
   - vendor
   - mail
+  - .github
   - .gitignore
   - .editorconfig
   - .idea
+  - scripts
 env: production
+sass:
+  sass_dir: css
+  style: compressed
