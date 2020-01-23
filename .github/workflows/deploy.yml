@@ -37,8 +37,8 @@ jobs:
       with:
         target_branch: gh-pages
         build_dir: _site
-        committer_name: Bot
-        committer_email: bot@users.noreply.github.com
+        committer_name: GitHub Actions
+        committer_email: actions@users.noreply.github.com
         fqdn: carlgo11.com
       env:
         GITHUB_PAT: ${{ secrets.GH_TOKEN }}
