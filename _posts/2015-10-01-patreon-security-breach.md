@@ -1,7 +1,7 @@
 ---
 category: internet security
 layout: post
-image: "/img/patreon.svg"
+image: "https://res.cloudinary.com/dbsfyc1ry/image/upload/v1581829748/carlgo11.com/posts/patreon_mayymx.svg"
 ---
 As you might know already, yesterday [Patreon](https://www.patreon.com/) discovered they had been breached and personal information such as email addresses, shipping addresses, posts, names and password hashes were compromised.
 

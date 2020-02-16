@@ -1,7 +1,7 @@
 ---
 category: internet security
 layout: post
-image: "/img/password.svg"
+image: "https://res.cloudinary.com/dbsfyc1ry/image/upload/v1581829748/carlgo11.com/posts/password_xdkig2.svg"
 ---
 <p class="lead">Google recently posted <a href="http://googleonlinesecurity.blogspot.com/2015/07/new-research-comparing-how-security.html">an article</a> comparing how security experts and normal people stay safe online.</p>
 
