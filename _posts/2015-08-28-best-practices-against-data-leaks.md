@@ -1,6 +1,7 @@
 ---
 category: internet security
 layout: post
+image: "/img/password.svg"
 ---
 <p class="lead">Google recently posted <a href="http://googleonlinesecurity.blogspot.com/2015/07/new-research-comparing-how-security.html">an article</a> comparing how security experts and normal people stay safe online.</p>
 
@@ -34,7 +35,7 @@ The possible factors of authentication are:
 
 [@SwiftOnSecurity](https://twitter.com/swiftOnSecurity) made a humoristic image about this:
 
-[![swiftonsecurity-mfa](https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_600/https://carlgo11.com/wp-content/uploads/2015/08/url.jpg)](https://twitter.com/swiftonsecurity/status/512081783643320320)  
+[![swiftonsecurity-mfa](https://res.cloudinary.com/dbsfyc1ry/image/upload/v1581828494/carlgo11.com/posts/w4kwhp.jpg)](https://twitter.com/swiftonsecurity/status/512081783643320320)  
 _Image owned by @SwiftOnSecurity_
 
 If you want to know which sites support two factor authentication go to [https://twofactorauth.org](https://twofactorauth.org).

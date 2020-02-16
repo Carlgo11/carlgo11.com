@@ -9,7 +9,7 @@ GateKeeper is a small bluetooth dongle best fitting on a keychain. The bluetooth
 
 Just plug the USB stick into a USB port on your PC/Mac (preferably on the front, as it will need a good signal). You can then configure what the dongle will do on your computer, using the software that GateKeeper provides. Either set it to lock automatically, unlock automatically, or both.
 
-![GateKeeper Black](https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_247,h_164/https://carlgo11.com/wp-content/uploads/2015/08/black_236.jpg)
+![GateKeeper Black](https://res.cloudinary.com/dbsfyc1ry/image/upload/v1581828474/carlgo11.com/posts/h9fnad.jpg)
 
 ### What do I think about it?
 
@@ -27,7 +27,7 @@ I probably wouldn't buy one myself at the moment, but I really think less tech-s
 
 It surely is a neat gadget, and I would love to see companies giving these out to their employees to prevent snooping in the office.
 
-![My GateKeeper](https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/https://carlgo11.com/wp-content/uploads/2015/08/FullSizeRender-300x300.jpg)
+![My GateKeeper](https://res.cloudinary.com/dbsfyc1ry/image/upload/c_scale,w_400/v1581828450/carlgo11.com/posts/td5fbt.jpg)
 
 **The GateKeeper also have other functionalities for phones but I have chosen not to dig too much into that.**
 
