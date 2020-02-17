@@ -1,6 +1,7 @@
 ---
 category: internet security
 layout: post
+image: "https://res.cloudinary.com/dbsfyc1ry/image/upload/v1581908477/carlgo11.com/posts/ts_i9xxxa.svg"
 ---
 
 After hosting a TeamSpeak3 server since 2015 I thought it would be a good idea to share  what I've learned under the years and how I keep my TS server safe.
