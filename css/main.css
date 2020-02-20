@@ -73,11 +73,12 @@ a {
 }
 
 a:visited {
-  color: inherit;
+  color: rgb(92, 184, 92);
   text-decoration: none;
 }
 
 a:hover {
+  color: rgb(92, 184, 92);
   text-decoration: none;
 }
 
