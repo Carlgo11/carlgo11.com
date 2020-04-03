@@ -6,7 +6,7 @@ body {
 }
 
 .no-webp body {
-  background: url("https://res.cloudinary.com/dbsfyc1ry/image/upload/q_auto:best/v1578964811/carlgo11.com/bg_zw6yhb.jpg") no-repeat center center fixed;
+  background: url("https://res.cloudinary.com/dbsfyc1ry/image/upload/q_auto:best/v1585923713/carlgo11.com/yc82iq.jpg") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -14,7 +14,7 @@ body {
 }
 
 .webp body {
-  background: url("https://res.cloudinary.com/dbsfyc1ry/image/upload/q_auto:good/v1578964811/carlgo11.com/bg_zw6yhb.webp") no-repeat center center fixed;
+  background: url("https://res.cloudinary.com/dbsfyc1ry/image/upload/v1585923713/carlgo11.com/yc82iq.webp") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -125,7 +125,7 @@ label {
 }
 
 .no-webp .content-head {
-  background: rgba(179, 179, 179, 0.87) url("https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive.progressive:steep,w_975,q_auto:good/v1578963377/carlgo11.com/img4_oac3tc.jpg") no-repeat center center;
+  background: rgba(179, 179, 179, 0.87) url("https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive.progressive:steep,w_975,q_auto:good/v1585923508/carlgo11.com/abuxaa.jpg") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -133,7 +133,7 @@ label {
 }
 
 .webp .content-head {
-  background: rgba(179, 179, 179, 0.87) url("https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive.progressive:steep,q_auto:good/v1578963377/carlgo11.com/img4_oac3tc.webp") no-repeat center center;
+  background: rgba(179, 179, 179, 0.87) url("https://res.cloudinary.com/dbsfyc1ry/image/upload/v1585923508/carlgo11.com/abuxaa.webp") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
