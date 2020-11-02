@@ -1,84 +1,58 @@
 <?php
-header('Content-Type: application/json');
+require 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
 
 function sendMail($name, $email, $subject, $message) {
-
-  require 'vendor/autoload.php';
-
   $mail = new PHPMailer(TRUE);
-
+  $mail->SMTPDebug = 0;
+  $mail->isSMTP();
+  $mail->Host = $_ENV['mail-host'];
+  $mail->SMTPAuth = TRUE;
+  $mail->Username = $_ENV['mail-user'];
+  $mail->Password = $_ENV['mail-password'];
+  $mail->SMTPSecure = 'tls';
+  $mail->Port = $_ENV['mail-port'];
   try {
-    //Server settings
-    $mail->SMTPDebug = 0;
-    $mail->isSMTP();
-    $mail->Host = $_ENV['mail-host'];
-    $mail->SMTPAuth = TRUE;
-    $mail->Username = $_ENV['mail-user'];
-    $mail->Password = $_ENV['mail-password'];
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
-
     $mail->setFrom($_ENV['mail-address'], $_ENV['mail-name']);
     $mail->addAddress($_ENV['mail-to']);
     $mail->addReplyTo($email);
-
     $mail->isHTML(FALSE);
     $mail->Subject = "New message from {$name} - {$subject}";
     $mail->Body = $message;
-
     $mail->send();
     return TRUE;
-  } catch (Exception $e) {
-    error_log($mail->ErrorInfo);
-    return FALSE;
+  } catch (\PHPMailer\PHPMailer\Exception $ex) {
+    error_log($ex->getMessage());
   }
-}
-
-function getInput($variable) {
-//  Use $_GET instead of filter_input() so that special chars can get decoded first.
-  $input = htmlspecialchars_decode($_GET[$variable]);
-  $output = filter_var($input);
-  if ($output != NULL)
-    return $output;
+  return FALSE;
 }
 
 function verifyToken($token, $secret_key) {
   $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret_key}&response={$token}"));
   if (is_object($response)) {
-    if ($response->success)
-      return TRUE;
-    return FALSE;
-  } else {
-    error_log("response isn't an object.");
-  }
+    if ($response->success) return TRUE;
+  } else error_log("response isn't an object.");
+  return FALSE;
 }
 
-
-/* ReCaptcha keys */
-$site_key = $_ENV['recaptcha-site-key'];
+/* ReCaptcha secret key */
 $secret_key = $_ENV['recaptcha-secret-key'];
 
-
 /* User inputs */
-$name = getInput('name');
-$email = getInput('email');
-$subject = getInput('subject');
-$message = getInput('message');
-$recaptcha_token = $_GET['g-recaptcha-response'];
-
+$name = filter_input(INPUT_POST, 'email_name', FILTER_SANITIZE_STRING);
+$email = filter_input(INPUT_POST, 'email_address', FILTER_SANITIZE_EMAIL);
+$subject = filter_input(INPUT_POST, 'email_subject', FILTER_SANITIZE_STRING);
+$message = filter_input(INPUT_POST, 'email_body', FILTER_SANITIZE_STRING);
+$recaptcha_token = filter_input(INPUT_POST, 'g-recaptcha-response', FILTER_SANITIZE_STRING);
 
 // Verify Captcha
 if (verifyToken($recaptcha_token, $secret_key)) {
-  // Send mail
-  $output = sendMail($name, $email, $subject, $message);
-  http_response_code(201);
-  error_log("mail sent: {$output}");
-  print(json_encode($output, JSON_PRETTY_PRINT));
-} else {
   http_response_code(400);
-  error_log("Invalid recaptcha");
-  print(json_encode(FALSE, JSON_PRETTY_PRINT));
+  return FALSE;
 }
+
+// Send mail
+$output = sendMail($name, $email, $subject, $message);
+if ($output) http_response_code(201);
+else http_response_code(500);
