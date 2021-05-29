@@ -5,8 +5,8 @@ $(window).on("load", function () {
     e.preventDefault();
     var form = $(this);
 
-$('#form-sending').show();
-$('#mail-form').hide();
+    $('#form-sending').show();
+    $('#mail-form').hide();
 
     /* Send form data */
     $.ajax({

@@ -1,20 +1,14 @@
-title: Carlgo11.com
-url: "carlgo11.com"
 permalink: /:year/:month/:title/
 markdown: kramdown
-img: /img/lain.png
+theme: null
 excerpt_separator: //description
 exclude:
-  - Gemfile
-  - Gemfile.lock
+  - "Gemfile*"
   - Rakefile
-  - vendor
-  - mail
-  - .github
-  - .gitignore
-  - .editorconfig
-  - .idea
-  - scripts
+  - vendor/
+  - _site/
+  - mail/
+  - ".*"
 env: production
 sass:
   sass_dir: css

@@ -5,10 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Carlgo11">
-  <meta name="owner" content="Carlgo11">
-  <meta name="description" content="Carlgo11 home page">
-  <meta name="theme-color" content="#5cb85c">
-  <meta name="msapplication-TileColor" content="#5cb85c">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="theme-color" content="#5CB85C">
 
   <!-- DNS Prefetch external domains -->
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
@@ -18,58 +16,41 @@
   <!-- Preload resources -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap">
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Quicksand:400&display=swap">
-  <link rel="preload" as="style" href="{{ site.baseurl }}/css/main.css">
-  <link rel="preload" as="script" href="{{ site.baseurl }}/js/modenizr-webp.js">
+  <link rel="preload" as="style" href="/css/main.css">
 
   <!-- Icons -->
   {% include favicons.html %}
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-        integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-  {% if page.name == "contact.html" %}
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/contact.css">
-  {% elsif page.name == "about.html" %}
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha512-tDXPcamuZsWWd6OsKFyH6nAqh/MjZ/5Yk88T5o+aMfygqNFPan1pLyPFAndRzmOWHKT+jSDzWpJv8krj6x1LMA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/main.css">
+  {% if page.name == "contact.html" %}<link rel="stylesheet" href="/css/contact.css">
+  {% elsif page.name == "about.html" %}<link rel="stylesheet" href="/css/about.css">
   {% endif %}
 
   <title>{% if page.title %}{{ page.title}} / {%endif%}{{ site.title }}</title>
 
   <!-- Load JQuery in head for contact form -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
   <div class="container">
-    <button class="navbar-toggler noselect" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler noselect" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Nav content -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="row navbar-nav mr-auto navbar-table noselect">
-        <li class="col nav-item">
-          <a class="nav-link" href="{{ site.baseurl }}/">Home</a>
-        </li>
-        <li class="col nav-item">
-          <a class="nav-link" href="https://github.com/Carlgo11">GitHub</a>
-        </li>
-        <li class="col nav-item">
-          <a class="nav-link" href="https://twitter.com/carlgo11">Twitter</a>
-        </li>
-        <li class="col nav-item">
-          <a class="nav-link" href="{{ site.baseurl }}/contact/">Contact</a>
-        </li>
-        <li class="col nav-item">
-          <a class="nav-link" href="{{ site.baseurl }}/about/">About</a>
-        </li>
+        <li class="col nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="col nav-item"><a class="nav-link" href="https://github.com/Carlgo11">GitHub</a></li>
+        <li class="col nav-item"><a class="nav-link" href="https://twitter.com/Carlgo11">Twitter</a></li>
+        <li class="col nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+        <li class="col nav-item"><a class="nav-link" href="/about/">About</a></li>
       </ul>
     </div>
   </div>
@@ -79,12 +60,9 @@
 
   <!-- Top image with logo and name -->
   <div class="content-head col-12 noselect">
-    <div>
-      <picture id="avatar">
-        <source srcset="https://res.cloudinary.com/dbsfyc1ry/image/upload/c_scale,fl_force_strip.lossy,h_128,q_auto:best/v1578513410/carlgo11.com/favicons/favicon.webp" type="image/webp">
-        <img src="https://res.cloudinary.com/dbsfyc1ry/image/upload/c_scale,fl_force_strip.lossy,q_auto:best/v1578513410/carlgo11.com/favicons/favicon.png" alt="avatar">
-      </picture>
-      <h1 id="title" class="noselect">Carlgo11</h1>
+    <div class="avatar">
+      <img loading="lazy" src="/img/favicon.webp">
+      <h1 id="title">Carlgo11</h1>
     </div>
   </div>
 
@@ -92,10 +70,11 @@
   <div class="content-body">{{ content }}</div>
 
 </div>
-
+<script>if (!("connection" in navigator) || navigator.connection.saveData !== true) {
+    $('body').css('background-image', 'url("/img/bg.webp")');
+    $('.content-head').css('background-image', 'url("/img/content.webp")');
+}</script>
 <!-- Load other JS sources -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
-<script src="{{ site.baseurl }}/js/modenizr-webp.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha512-Ah5hWYPzDsVHf9i2EejFBFrG2ZAPmpu4ZJtW4MfSgpZacn+M9QHDt+Hd/wL1tEkk1UgbzqepJr6KnhZjFKB+0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

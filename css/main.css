@@ -3,18 +3,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif, Helvetica, Arial;
-}
-
-.no-webp body {
-  background: url("https://res.cloudinary.com/dbsfyc1ry/image/upload/q_auto:best/v1585923713/carlgo11.com/yc82iq.jpg") no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-}
-
-.webp body {
-  background: url("https://res.cloudinary.com/dbsfyc1ry/image/upload/v1585923713/carlgo11.com/yc82iq.webp") no-repeat center center fixed;
+  background: #F1F1F1 no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -36,7 +25,6 @@ body {
 
 /* lg and lower */
 @media only screen and (max-width: 992px) {
-
   #posts-excerpts {
     margin: 0 auto;
   }
@@ -94,8 +82,8 @@ pre {
 }
 
 ul {
-  padding-inline-start: 1em;
-  margin-bottom: 0;
+  padding: 0 1em;
+  margin: auto;
 }
 
 input, textarea {
@@ -124,16 +112,8 @@ label {
   text-align: center;
 }
 
-.no-webp .content-head {
-  background: rgba(179, 179, 179, 0.87) url("https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive.progressive:steep,w_975,q_auto:good/v1585923508/carlgo11.com/abuxaa.jpg") no-repeat center center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-}
-
-.webp .content-head {
-  background: rgba(179, 179, 179, 0.87) url("https://res.cloudinary.com/dbsfyc1ry/image/upload/v1585923508/carlgo11.com/abuxaa.webp") no-repeat center center;
+.content-head {
+  background: #B3B3B3DD no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -152,25 +132,24 @@ label {
 
 /* Avatar */
 
-#avatar {
+.avatar {
   box-sizing: content-box;
   display: block;
-  float: none;
   position: static;
-  transition: all ease .4s;
-  height: 128px;
 }
 
-#avatar:hover {
+.avatar > img {
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+  transition: all ease .4s;
+}
+
+.avatar img:hover {
   -webkit-transform: translateY(-.75em);
   -moz-transform: translateY(-.75em);
   -ms-transform: translateY(-.75em);
   transform: translateY(-.75em);
-}
-
-#avatar > * {
-  width: 128px;
-  border-radius: 50%;
 }
 
 #title {
@@ -225,9 +204,8 @@ label {
 }
 
 .container {
-  max-width: 1400px;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  max-width: calc(1400px - 10vw);
+  padding: 0;
 }
 
 .bg-success {
