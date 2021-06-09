@@ -50,7 +50,7 @@ $message = filter_input(INPUT_POST, 'email_body', FILTER_SANITIZE_STRING);
 $recaptcha_token = filter_input(INPUT_POST, 'g-recaptcha-response', FILTER_SANITIZE_STRING);
 
 // Verify Captcha
-if (verifyToken($recaptcha_token, $secret_key)) {
+if (!verifyToken($recaptcha_token, $secret_key)) {
   http_response_code(400);
   return FALSE;
 }
