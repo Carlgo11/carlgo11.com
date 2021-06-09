@@ -6,13 +6,15 @@ use PHPMailer\PHPMailer\PHPMailer;
 function sendMail($name, $email, $subject, $message) {
   $mail = new PHPMailer(TRUE);
   $mail->SMTPDebug = 0;
+  $mail->CharSet = 'UTF-8';
+  $mail->Encoding = 'base64';
   $mail->isSMTP();
   $mail->Host = $_ENV['mail-host'];
   $mail->SMTPAuth = TRUE;
   $mail->Username = $_ENV['mail-user'];
   $mail->Password = $_ENV['mail-password'];
   $mail->SMTPSecure = 'tls';
-  $mail->Port = $_ENV['mail-port'];
+  $mail->Port = (int)$_ENV['mail-port'];
   try {
     $mail->setFrom($_ENV['mail-address'], $_ENV['mail-name']);
     $mail->addAddress($_ENV['mail-to']);
@@ -31,7 +33,8 @@ function sendMail($name, $email, $subject, $message) {
 function verifyToken($token, $secret_key) {
   $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret_key}&response={$token}"));
   if (is_object($response)) {
-    if ($response->success) return TRUE;
+    if ($response->success === TRUE && $response->hostname === 'carlgo11.com')
+      return TRUE;
   } else error_log("response isn't an object.");
   return FALSE;
 }

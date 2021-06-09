@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  mail:
+    build: .
+    ports:
+      - 5491:80
+    volumes:
+      - ./nginx.conf:/mail/nginx.conf
+      - ./mail.php:/mail/mail.php:ro
+      - ./php.ini:/usr/local/etc/php/php.ini:ro
