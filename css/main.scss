@@ -54,6 +54,15 @@ body {
   .container {
     padding-right: 0 !important;
     padding-left: 0 !important;
+    overflow: hidden;
+  }
+
+  .background {
+    display: none;
+  }
+
+  article {
+    padding: 0 1em !important;
   }
 }
 
