@@ -65,6 +65,7 @@
 
   <!-- Top image with logo and name -->
   <div class="content-head col-12">
+    {% unless page.image %}
     <div class="head-wrap">
     <picture>
       <source srcset="/img/xl/head.avif 4032w, /img/lg/head.avif 1400w, /img/sm/head.avif 768w" type="image/avif">
@@ -78,6 +79,7 @@
       <h1 id="title">Carlgo11</h1>
     </div>
     </div>
+    {% endunless %}
   </div>
 
   <!-- Load content -->

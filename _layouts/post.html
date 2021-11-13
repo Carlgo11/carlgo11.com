@@ -3,12 +3,9 @@ layout: default
 ---
 <script type="text/javascript">
   $(window).on("load", function () {
-    console.log("hello?");
     if ("{{ page.image }}" !== "") {
       $('.content-head').css('background', "rgba(179, 179, 179, 0.87) url({{ page.image }}) no-repeat center center");
       $('.content-head').css('background-size', "cover");
-      $('#avatar').css("display", "none");
-      $('#title').css("display", "none");
     }
   });
 </script>
