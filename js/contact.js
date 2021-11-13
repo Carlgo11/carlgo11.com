@@ -1,32 +1,18 @@
-$(window).on("load", function () {
-
-  /* On form submit */
+$(window).on('load', function () {
   $('#mail-form').on('submit', function (e) {
     e.preventDefault();
-    var form = $(this);
-
-    $('#form-sending').show();
-    $('#mail-form').hide();
-
-    /* Send form data */
-    $.ajax({
+    $('#form-sending').show(), $('#mail-form').hide(), $.ajax({
       method: 'POST',
       url: 'https://submit.carlgo11.com/',
-      dataType: "text",
-      cache: false,
-      data: form.serialize(),
-
+      dataType: 'text',
+      cache: !1,
+      data: $(this).serialize(),
       success: function () {
-        $('#form-sending').hide();
-        $('#form-success').fadeIn().alert();
+        $('#form-sending').hide(), $('#form-success').fadeIn().alert()
       },
-
       error: function () {
-        $('#form-sending').hide();
-        $('#form-error').fadeIn().alert();
+        $('#form-sending').hide(), $('#form-error').fadeIn().alert()
       }
-    });
-
-  });
-
-});
+    })
+  })
+})
