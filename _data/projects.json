@@ -1,0 +1,50 @@
+{
+  "2fa.directory": {
+    "url": "https://2fa.directory/",
+    "description": "A list of popular sites and whether or not they accept two factor authentication.",
+    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive,q_auto:good/v1578531014/carlgo11.com/projects/2fa_hjdvdk.webp"
+  },
+  "TempFiles": {
+    "url": "https://tempfiles.download/",
+    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_sanitize/v1578531014/carlgo11.com/projects/tempfiles_h2cjij.svg",
+    "description": "Encrypted temporary cloud storage for sharing files with friends and family."
+  },
+  "Carl Passwords": {
+    "url": "https://carlgo11.pw/",
+    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive,q_auto:good/v1578531014/carlgo11.com/projects/carlgo11.pw_shdn2g.webp",
+    "description": "Encrypted temporary cloud storage for sharing files with friends and family."
+  },
+  "Quiz": {
+    "url": "https://github.com/Carlgo11/quiz",
+    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/v1636863139/carlgo11.com/projects/quiz.svg",
+    "description": "Quiz answer-tracking platform."
+  },
+  "Nanoleaf Github Activity": {
+    "url": "https://github.com/Carlgo11/nanoleaf-github-activity",
+    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/v1636863139/carlgo11.com/projects/nanoleaf.svg",
+    "description": " GitHub Activity graph on Nanoleaf Canvas."
+  },
+  "Guest-Portal": {
+    "url": "https://github.com/Carlgo11/guest-portal",
+    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/v1636863139/carlgo11.com/projects/guest-portal.svg",
+    "description": "UniFi external guest portal."
+  },
+  "FlightData": {
+    "url": "https://github.com/Carlgo11/FlightData/",
+    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive,q_auto:good/v1578531014/carlgo11.com/projects/flightdata_shimdt.webp",
+    "description": "An easy to use flight tracker with useful airplane data and modern user interface.",
+    "archived": true
+  },
+  "UploadMe": {
+    "url": "https://github.com/Carlgo11/UploadMe/",
+    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/v1578531014/carlgo11.com/projects/uploadme_idvt5q.webp",
+    "description": "A file uploading system with privacy in mind.<br>Superseded by TempFiles.",
+    "archived": true
+  },
+  "Essentials": {
+    "url": "https://dev.bukkit.org/projects/essentials",
+    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/v1578532485/carlgo11.com/projects/essentials_prsdmq.webp",
+    "description": "A collection of useful commands and features for Minecraft Bukkit servers.",
+    "archived": true
+  }
+}

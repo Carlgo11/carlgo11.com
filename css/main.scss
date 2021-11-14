@@ -312,18 +312,18 @@ label {
 
 .post-link {
   margin-top: -2rem;
-  border-top: 2px #4C545B solid;
+  border-top: 1px solid #0000004C;
 
   & > div {
     background: #5CB85C;
     color: white;
     max-width: max-content;
     padding: 6px;
-    border: 2px #4C545B solid;
+    border: 1px solid #0000004C;
     border-top: 0;
     text-decoration: none;
     text-align: center;
-    margin: -2px auto 13vh;
+    margin: -1px auto 13vh;
   }
 }
 

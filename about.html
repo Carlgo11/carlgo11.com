@@ -21,74 +21,21 @@ title: About
     projects I've created or worked on:</p>
 
   <div class="row" id="project-list">
-    <div class="card noselect">
-      <a href="https://2fa.directory">
-          <img loading="lazy" class="card-img-top" src="https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive,q_auto:good/v1578531014/carlgo11.com/projects/2fa_hjdvdk.webp">
-      </a>
-      <div class="card-body">
-        <a href="https://2fa.directory"><h5 class="card-title">2fa.directory</h5></a>
-        <hr>
-        <p class="card-text">A list of popular sites and whether or not they accept two factor authentication.</p>
-      </div>
-    </div>
+    {% for project_array in site.data.projects %}
+    {% assign project = project_array[1] %}
+    {% assign name = project_array[0] %}
 
     <div class="card noselect">
-      <a href="https://tempfiles.download/">
-          <img loading="lazy" class="card-img-top" src="https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_sanitize/v1578531014/carlgo11.com/projects/tempfiles_h2cjij.svg">
+      <a href="{{ project.url }}">
+        <img loading="lazy" class="card-img-top" src="{{ project.img }}">
       </a>
       <div class="card-body">
-        <a href="https://tempfiles.download/"><h5 class="card-title">TempFiles</h5></a>
+        <a href="{{ project.url }}"><h5 class="card-title">{{ name }} {% if project.archived %}<i class="fas fa-archive"></i>{% endif %}</h5></a>
         <hr>
-        <p class="card-text">Encrypted temporary cloud storage for sharing files with friends and family.</p>
+        <p class="card-text">{{ project.description }}</p>
       </div>
     </div>
-
-    <div class="card noselect">
-      <a href="https://carlgo11.pw/">
-          <img loading="lazy" class="card-img-top" src="https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive,q_auto:good/v1578531014/carlgo11.com/projects/carlgo11.pw_shdn2g.webp">
-      </a>
-      <div class="card-body">
-        <a href="https://carlgo11.pw/"><h5 class="card-title">Carl Passwords</h5></a>
-        <hr>
-        <p class="card-text">Encrypted temporary cloud storage for sharing files with friends and family.</p>
-      </div>
-    </div>
-
-    <div class="card noselect">
-      <a href="https://github.com/Carlgo11/FlightData/">
-          <img loading="lazy" class="card-img-top" src="https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive,q_auto:good/v1578531014/carlgo11.com/projects/flightdata_shimdt.webp">
-      </a>
-      <div class="card-body">
-        <a href="https://github.com/Carlgo11/FlightData/"><h5 class="card-title">FlightData</h5></a>
-        <hr>
-        <p class="card-text">An easy to use flight tracker with useful airplane data and modern user interface.</p>
-      </div>
-    </div>
-
-    <div class="card noselect">
-      <a href="https://github.com/Carlgo11/UploadMe/">
-          <img loading="lazy" class="card-img-top" src="https://res.cloudinary.com/dbsfyc1ry/image/upload/v1578531014/carlgo11.com/projects/uploadme_idvt5q.webp">
-      </a>
-      <div class="card-body">
-        <a href="https://github.com/Carlgo11/UploadMe/"><h5 class="card-title">UploadMe <i class="fas fa-archive"></i>
-        </h5></a>
-        <hr>
-        <p class="card-text">A file uploading system with privacy in mind.<br>Superseded by TempFiles.</p>
-      </div>
-    </div>
-
-    <div class="card noselect">
-      <a href="https://dev.bukkit.org/projects/essentials">
-          <img loading="lazy" class="card-img-top" src="https://res.cloudinary.com/dbsfyc1ry/image/upload/v1578532485/carlgo11.com/projects/essentials_prsdmq.webp">
-      </a>
-      <div class="card-body">
-        <a href="https://dev.bukkit.org/projects/essentials"><h5 class="card-title">Essentials
-          <i class="fas fa-archive"></i></h5></a>
-        <hr>
-        <p class="card-text">A collection of useful commands and features for Minecraft Bukkit servers.</p>
-      </div>
-    </div>
-
+    {% endfor %}
   </div>
 
   <hr>
