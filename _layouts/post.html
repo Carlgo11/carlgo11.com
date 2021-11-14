@@ -1,13 +1,6 @@
 ---
 layout: default
 ---
-<script type="text/javascript">
-  $(document).ready(function () {
-    if ('{{ page.image }}' !== '') {
-      $('.content-head').css('background', 'rgba(179, 179, 179, 0.87) url({{ page.image }}) no-repeat center center / cover')
-    }
-  });
-</script>
 <div class="row">
   <article>
     <time class="success"><i class="bi bi-calendar text-secondary"></i> {{ page.date | date: "%Y-%m-%d" }}</time>

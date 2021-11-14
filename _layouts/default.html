@@ -14,8 +14,8 @@
   <link rel="dns-prefetch" href="https://res.cloudinary.com">
 
   <!-- Preload resources -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap">
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Quicksand:400&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Quicksand:400">
   <link rel="preload" as="style" href="/css/main.css">
 
   <!-- Icons -->
@@ -64,7 +64,7 @@
 <div class="container">
 
   <!-- Top image with logo and name -->
-  <div class="content-head">
+  <div class="content-head"{% if page.image %} style="background:rgba(179, 179, 179, 0.87) url('{{ page.image }}') no-repeat center center / cover"{% endif %}>
     {% unless page.image %}
     <picture>
       <source srcset="/img/xl/head.avif 4032w, /img/lg/head.avif 1400w, /img/sm/head.avif 768w" type="image/avif">
