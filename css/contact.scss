@@ -1,44 +1,31 @@
 ---
 ---
-
 #contact-info {
-  background-color: rgba(0, 0, 0, .1);
+  background-color: #00000019;
   margin-top: 40px;
   font-size: 1.3em;
   padding: 5px 5px 15px 15px;
-}
 
-#contact-info > ul {
-  list-style: none;
-}
+  ul {
+    list-style: none;
+  }
 
-#contact-info li {
-  margin: 5px 5px 5px 0;
+  li {
+    margin: 5px 5px 5px 0;
+
+    a {
+      color: #212529;
+    }
+  }
 }
 
 .brand-logo {
   color: #212529;
-}
 
-.brand-logo::before {
-  margin-right: 10px;
-  font-family: 'Font Awesome 5 Brands';
-}
-
-#twitter-handle::before {
-  content: '\f099';
-}
-
-#github-handle::before {
-  content: '\f09b';
-}
-
-#keybase-handle::before {
-  content: '\f4f5';
-}
-
-#reddit-handle::before {
-  content: '\f1a1';
+  &::before {
+    margin-right: 10px;
+    font-family: 'Font Awesome 5 Brands';
+  }
 }
 
 .alert {
@@ -57,19 +44,9 @@
   width: 5rem;
   height: 5rem;
   animation: spinner-border 1.7s linear infinite;
-  -webkit-animation: spinner-border 1.7s linear infinite;
 }
 
-@-webkit-keyframes opacity {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-moz-keyframes opacity {
+@keyframes opacity {
   0% {
     opacity: 1;
   }
@@ -81,31 +58,27 @@
 #sending {
   margin-right: -3rem;
   margin-bottom: 3rem;
-}
 
-#sending span {
-  -webkit-animation-name: opacity;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
+  span {
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 
-  -moz-animation-name: opacity;
-  -moz-animation-duration: 1s;
-  -moz-animation-iteration-count: infinite;
-}
+    :nth-child(1) {
+      -webkit-animation-delay: 100ms;
+      -moz-animation-delay: 100ms;
+    }
 
-#sending span:nth-child(1) {
-  -webkit-animation-delay: 100ms;
-  -moz-animation-delay: 100ms;
-}
+    :nth-child(2) {
+      -webkit-animation-delay: 300ms;
+      -moz-animation-delay: 300ms;
+    }
 
-#sending span:nth-child(2) {
-  -webkit-animation-delay: 300ms;
-  -moz-animation-delay: 300ms;
-}
-
-#sending span:nth-child(3) {
-  -webkit-animation-delay: 500ms;
-  -moz-animation-delay: 500ms;
+    :nth-child(3) {
+      -webkit-animation-delay: 500ms;
+      -moz-animation-delay: 500ms;
+    }
+  }
 }
 
 a.bg-success:focus, a.bg-success:hover, button.bg-success:focus, button.bg-success:hover {

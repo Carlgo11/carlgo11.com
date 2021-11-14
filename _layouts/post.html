@@ -2,20 +2,16 @@
 layout: default
 ---
 <script type="text/javascript">
-  $(window).on("load", function () {
-    if ("{{ page.image }}" !== "") {
-      $('.content-head').css('background', "rgba(179, 179, 179, 0.87) url({{ page.image }}) no-repeat center center");
-      $('.content-head').css('background-size', "cover");
+  $(document).ready(function () {
+    if ('{{ page.image }}' !== '') {
+      $('.content-head').css('background', 'rgba(179, 179, 179, 0.87) url({{ page.image }}) no-repeat center center / cover')
     }
   });
 </script>
 <div class="row">
-  <div class="col">
-    <article>
-      <time class="post-date success noselect">{{ page.date | date: "%Y-%m-%d" }}</time>
-      <h1 class="post-title"> {{ page.title }}</h1>
-      {{ content }}
-    </article>
-  </div>
-
+  <article>
+    <time class="success"><i class="bi bi-calendar text-secondary"></i> {{ page.date | date: "%Y-%m-%d" }}</time>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {{ content }}
+  </article>
 </div>

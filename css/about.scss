@@ -1,6 +1,5 @@
 ---
 ---
-
 #body {
   margin: 0 auto;
 }
@@ -8,12 +7,12 @@
 #membership-logos {
   display: flex;
   justify-content: space-between;
-}
 
-#membership-logos > div {
-  width: 76px;
-  text-align: center;
-  margin: 1rem 0;
+  & > div {
+    width: 76px;
+    text-align: center;
+    margin: 1rem 0;
+  }
 }
 
 .membership-logo {
@@ -31,13 +30,11 @@
   margin: 1rem;
   width: 18rem;
   height: 360px;
-}
 
-.card:hover {
-  -webkit-transform: translateY(-.75em);
-  -moz-transform: translateY(-.75em);
-  -ms-transform: translateY(-.75em);
-  transform: translateY(-.75em);
+  &:hover {
+    -webkit-transform: translateY(-.75em);
+    transform: translateY(-.75em);
+  }
 }
 
 .card-img-top {
@@ -49,6 +46,6 @@
   color: initial !important;
 }
 
-.fa-archive {
+.bi-archive-fill {
   color: grey;
 }
