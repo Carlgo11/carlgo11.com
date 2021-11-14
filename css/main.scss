@@ -80,6 +80,10 @@ nav {
   line-height: 24px;
 }
 
+h1, h2 {
+  font-size: 2em;
+}
+
 h1, h2, h3, h4 {
   font-weight: 300;
   text-transform: capitalize;
@@ -217,6 +221,10 @@ label {
   }
 }
 
+.navbar {
+  padding: .5rem 1rem;
+}
+
 .navbar-table {
   width: 100%;
   text-align: center;
@@ -311,7 +319,6 @@ td, th {
 
 #post-list {
   padding: 0;
-  width: max-content;
 
   ul {
     list-style: none;
