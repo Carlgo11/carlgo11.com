@@ -2,16 +2,16 @@
   "2fa.directory": {
     "url": "https://2fa.directory/",
     "description": "A list of popular sites and whether or not they accept two factor authentication.",
-    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive,q_auto:good/v1578531014/carlgo11.com/projects/2fa.svg"
+    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/v1637965466/carlgo11.com/projects/2fa.svg"
   },
   "TempFiles": {
     "url": "https://tempfiles.download/",
-    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_sanitize/v1578531014/carlgo11.com/projects/tempfiles.svg",
+    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/v1637964974/carlgo11.com/projects/tempfiles.svg",
     "description": "Encrypted temporary cloud storage for sharing files with friends and family."
   },
   "Carl Passwords": {
     "url": "https://carlgo11.pw/",
-    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/fl_force_strip.progressive,q_auto:good/v1578531014/carlgo11.com/projects/carlgo11.pw.svg",
+    "img": "https://res.cloudinary.com/dbsfyc1ry/image/upload/v1578531014/carlgo11.com/projects/carlgo11.pw.svg",
     "description": "Password generation tool with unicode support."
   },
   "Quiz": {
