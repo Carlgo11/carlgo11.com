@@ -3,7 +3,7 @@ $(window).on('load', function () {
     e.preventDefault();
     $('#form-sending').show(), $('#mail-form').hide(), $.ajax({
       method: 'POST',
-      url: 'http://127.0.0.1:5491/',
+      url: 'https://submit.carlgo11.com/',
       dataType: 'text',
       cache: !1,
       data: $(this).serialize(),
