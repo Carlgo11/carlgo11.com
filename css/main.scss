@@ -6,11 +6,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif, Helvetica, Arial;
-  background: #F1F1F1 no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: #F1F1F1 no-repeat center center / cover;
 }
 
 .background {
@@ -19,9 +15,6 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  user-drag: none;
-  -webkit-user-drag: none;
-  -moz-user-drag: none;
   pointer-events: none;
   z-index: -1;
 }
@@ -42,9 +35,6 @@ body {
     min-width: 100%;
     transform: translate(-50%, -50%);
     object-fit: cover;
-    user-drag: none;
-    -webkit-user-drag: none;
-    -moz-user-drag: none;
     pointer-events: none;
   }
 }
@@ -268,7 +258,6 @@ label {
 .btn {
   border: 0;
   -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
 
   &:hover {
