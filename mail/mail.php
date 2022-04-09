@@ -31,26 +31,26 @@ function sendMail($name, $email, $subject, $message) {
 }
 
 function verifyToken($token, $secret_key) {
-  $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret_key}&response={$token}"));
+  $response = json_decode(file_get_contents("https://hcaptcha.com/siteverify?secret={$secret_key}&response={$token}&remoteip={$_SERVER['REMOTE_ADDR']}"));
   if (is_object($response)) {
-    if ($response->success === TRUE && $response->hostname === 'carlgo11.com')
+    if ($response->success === TRUE && $response->hostname === $_SERVER['REMOTE_ADDR'])
       return TRUE;
   } else error_log("response isn't an object.");
   return FALSE;
 }
 
-/* ReCaptcha secret key */
-$secret_key = $_ENV['recaptcha-secret-key'];
+/* Captcha secret key */
+$secret_key = $_ENV['captcha-secret-key'];
 
 /* User inputs */
 $name = filter_input(INPUT_POST, 'email_name', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email_address', FILTER_SANITIZE_EMAIL);
 $subject = filter_input(INPUT_POST, 'email_subject', FILTER_SANITIZE_STRING);
 $message = filter_input(INPUT_POST, 'email_body', FILTER_SANITIZE_STRING);
-$recaptcha_token = filter_input(INPUT_POST, 'g-recaptcha-response', FILTER_SANITIZE_STRING);
+$captcha_response = filter_input(INPUT_POST, 'h-captcha-response', FILTER_SANITIZE_STRING);
 
 // Verify Captcha
-if (!verifyToken($recaptcha_token, $secret_key)) {
+if (!verifyToken($captcha_response, $secret_key)) {
   http_response_code(400);
   return FALSE;
 }

@@ -66,17 +66,17 @@
 
     :nth-child(1) {
       -webkit-animation-delay: 100ms;
-      -moz-animation-delay: 100ms;
+      animation-delay: 100ms;
     }
 
     :nth-child(2) {
       -webkit-animation-delay: 300ms;
-      -moz-animation-delay: 300ms;
+      animation-delay: 300ms;
     }
 
     :nth-child(3) {
       -webkit-animation-delay: 500ms;
-      -moz-animation-delay: 500ms;
+      animation-delay: 500ms;
     }
   }
 }
