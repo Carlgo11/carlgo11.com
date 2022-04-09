@@ -1,19 +1,11 @@
+# General
+.*
+*.lock
+!.gitignore
+!.editorconfig
+
 # Jekyll
 _site/
-.jekyll-cache/
-.jekyll-metadata
 
-# Jetbrains
-*.iml
-*.ipr
-*.idea/
-
-# Ruby gems
-/.bundle/
-*/vendor/
-Gemfile.lock
-
-# Composer
-*/composer.phar
-*/composer.lock
+# Bundler/Composer
 vendor/
