@@ -9,6 +9,8 @@ exclude:
   - _site/
   - mail/
   - ".*"
+include:
+  - _headers
 env: production
 sass:
   sass_dir: css
