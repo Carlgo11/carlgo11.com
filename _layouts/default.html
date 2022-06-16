@@ -25,6 +25,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.0/font/bootstrap-icons.min.css" integrity="sha512-yLNTU6YQWEtsM/WVkUqd2jRzzq5hmfFUMVvziVlkgC0R9HTElDtyF4DiWiBeMS36npvN+NWwrr764A4AWGcmQQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/css/main.css">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta property="twitter:creator" content="Carlgo11">
+  <meta property="twitter:site" content="Carlgo11">
+  <meta property="twitter:image" content="{{ page.image | default: site.social_image }}">
+  <meta property="twitter:description" content="{{ page.description | default: site.description }}">
   {% if page.name == "contact.html" %}<link rel="stylesheet" href="/css/contact.css">
   {% elsif page.name == "about.html" %}<link rel="stylesheet" href="/css/about.css">
   {% endif %}
