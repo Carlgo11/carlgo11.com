@@ -2,6 +2,7 @@
 category: internet security
 layout: post
 title: No, You Don't Need a VPN
+description: The last couple of years the VPN industry have flooded the internet with ads for general consumers. In this post I'll debunk their claims and tell you the real use cases of a VPN.
 ---
 
 The last couple of years the VPN industry have flooded the internet with ads for general consumers.
