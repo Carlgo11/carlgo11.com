@@ -1,5 +1,7 @@
 permalink: /:year/:month/:title/
 markdown: kramdown
+kramdown:
+  hard_wrap: true
 theme: null
 excerpt_separator: //description
 exclude:
@@ -11,7 +13,7 @@ exclude:
   - ".*"
 include:
   - _headers
-env: production
+env: development
 sass:
   sass_dir: css
   style: compressed
