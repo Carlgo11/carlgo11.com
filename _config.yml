@@ -15,7 +15,7 @@ exclude:
   - ".*"
 include:
   - _headers
-env: development
+env: production
 sass:
   sass_dir: css
   style: compressed
