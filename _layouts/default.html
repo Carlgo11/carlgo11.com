@@ -4,8 +4,8 @@
   <!-- Meta tags -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Carlgo11">
-  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="theme-color" content="#5CB85C">
 
   <!-- DNS Prefetch external domains -->
@@ -28,10 +28,10 @@
 
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:title" content="{{ page.title | default: site.title }}">
-  <meta property="twitter:creator" content="Carlgo11">
+  <meta property="twitter:creator" content="{{ site.author }}">
   <meta property="twitter:site" content="carlgo11">
-  <meta property="twitter:image" content="{{ page.image | default: site.social_image }}">
-  <meta property="twitter:description" content="{{ page.description | default: page.excerpt | strip_html | truncatewords: 80 }}">
+  <meta property="twitter:image" content="{{ page.image.src | default: site.social_image }}">
+  <meta property="twitter:description" content="{{ page.description | default: page.excerpt | strip_html }}">
   {% if page.name == "contact.html" %}<link rel="stylesheet" href="/css/contact.css">
   {% elsif page.name == "about.html" %}<link rel="stylesheet" href="/css/about.css">
   {% endif %}
@@ -71,7 +71,7 @@
 <div class="container">
 
   <!-- Top image with logo and name -->
-  <div class="content-head"{% if page.image %} style="background:rgba(179, 179, 179, 0.87) url('{{ page.image }}') no-repeat center center / cover"{% endif %}>
+  <div class="content-head"{% if page.image %} style="background:rgba(179, 179, 179, 0.87) url('{{ page.image.src }}') no-repeat center center / cover"{% endif %}>
     {% unless page.image %}
     <picture>
       <source srcset="/img/xl/head.avif 4032w, /img/lg/head.avif 1400w, /img/sm/head.avif 768w" type="image/avif">

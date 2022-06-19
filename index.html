@@ -8,18 +8,12 @@ layout: default
     <hr>
 
     {% for post in site.posts %}
-
     <div class="post-excerpt">
       <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <p>{{ post.excerpt | truncatewords: 80 | markdownify }}</p>
+      {{ post.excerpt | markdownify }}
     </div>
-
-    <a href="{{ site.baseurl }}{{ post.url }}">
-      <div class="post-link">
-        <div class="">Read more</div>
-      </div>
-    </a>
-
+    <a class="continue-reading" href="{{ site.baseurl }}{{ post.url }}">Continue reading »</a>
+    <hr>
     {% endfor %}
 
   </div>

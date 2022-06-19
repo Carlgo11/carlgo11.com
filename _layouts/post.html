@@ -1,10 +1,14 @@
 ---
 layout: default
 ---
+
 <div class="row">
+  <time class="success"><i class="bi bi-calendar text-secondary"></i> {{ page.date | date: "%Y-%m-%d" }}</time>
   <article>
-    <time class="success"><i class="bi bi-calendar text-secondary"></i> {{ page.date | date: "%Y-%m-%d" }}</time>
     <h1 class="post-title">{{ page.title }}</h1>
     {{ content }}
+    <p id="post-date">Posted on <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%Y-%m-%d" }}</time> by {{ page.author | default: site.author }}</p>
   </article>
+  {% if page.image.author %}<p style="float:right;font-size: .7em;margin:auto;text-align: right">Top artwork sourced from: <a href="{{ page.image.url }}">{{ page.image.author }}</a></p>{% endif %}
+
 </div>

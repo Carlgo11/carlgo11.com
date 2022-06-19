@@ -272,14 +272,20 @@ label {
   li {
     margin-bottom: 1em;
   }
+
   img {
-    max-width:100%;
+    max-width: 100%;
     margin: auto;
+  }
+
+  #post-date {
+    display: none;
   }
 }
 
 .post-excerpt {
   position: relative;
+  padding-top: 1rem;
 
   &:after {
     position: absolute;
@@ -297,21 +303,10 @@ td, th {
   text-align: center;
 }
 
-.post-link {
-  margin-top: -2rem;
-  border-top: 1px solid #0000004C;
-
-  & > div {
-    background: #5CB85C;
-    color: white;
-    max-width: max-content;
-    padding: 6px;
-    border: 1px solid #0000004C;
-    border-top: 0;
-    text-decoration: none;
-    text-align: center;
-    margin: -1px auto 13vh;
-  }
+.continue-reading {
+  color: #333 !important;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-weight: 300;
 }
 
 #post-list {
