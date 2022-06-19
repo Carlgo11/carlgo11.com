@@ -1,9 +1,8 @@
 /*
   Access-Control-Allow-Origin: self
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' cdnjs.cloudflare.com static.cloudflareinsights.com *.hcaptcha.com hcaptcha.com; style-src 'self' cdnjs.cloudflare.com fonts.googleapis.com hcaptcha.com *.hcaptcha.com; img-src *; font-src fonts.gstatic.com cdnjs.cloudflare.com; connect-src 'self' hcaptcha.com *.hcaptcha.com submit.carlgo11.com; frame-src hcaptcha.com *.hcaptcha.com; worker-src 'none'; manifest-src 'none'
   Permissions-Policy: document-domain=()
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
-  
+
 /contact/*
   Access-Control-Allow-Origin: https://submit.carlgo11.com/
