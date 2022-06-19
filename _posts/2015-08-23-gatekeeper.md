@@ -3,15 +3,14 @@ category: reviews
 title: GateKeeper
 layout: post
 ---
-### What is GateKeeper?
-
-GateKeeper is a small bluetooth dongle best fitting on a keychain. The bluetooth dongle talks to the little USB stick that you also get. (see picture below)
+GateKeeper is a small bluetooth dongle that functions as a proximity key for your PC. It can lock and unlock your computer if you move away from it.
+Best fitting on a keychain, the bluetooth dongle talks to the little USB stick that you also get.
 
 Just plug the USB stick into a USB port on your PC/Mac (preferably on the front, as it will need a good signal). You can then configure what the dongle will do on your computer, using the software that GateKeeper provides. Either set it to lock automatically, unlock automatically, or both.
 
 ![GateKeeper Black](https://res.cloudinary.com/dbsfyc1ry/image/upload/v1581828474/carlgo11.com/posts/h9fnad.jpg)
 
-### What do I think about it?
+## What do I think about it?
 
 I really like the neat little gadget since I usually don't lock my computer when I leave it. Here I don't have to think about it. When I leave the computer it locks, and when I come back it unlocks without me doing anything.
 

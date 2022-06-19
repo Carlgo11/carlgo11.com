@@ -1,6 +1,10 @@
 ---
 category: internet security
 layout: post
+image:
+  src: https://res.cloudinary.com/dbsfyc1ry/image/upload/v1655594243/carlgo11.com/posts/UDM-Pro.jpg
+  author: Ubiquiti
+  url: https://ui.com/
 ---
 
 I've used Ubiquiti/UniFi products for a couple of years now and have during that time I've saved some useful commands and directories/files that I thought I'd share.  
