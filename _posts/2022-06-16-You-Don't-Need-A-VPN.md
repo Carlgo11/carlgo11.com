@@ -4,7 +4,7 @@ layout: post
 title: No, You Don't Need a VPN
 description: The last couple of years the VPN industry have flooded the internet with ads for general consumers. In this post I'll debunk their claims and tell you the real use cases of a VPN.
 image:
-  src: https://res.cloudinary.com/dbsfyc1ry/image/upload/v1655594329/carlgo11.com/posts/vpn.jpg
+  src: https://res.cloudinary.com/dbsfyc1ry/image/upload/c_scale,h_1014,w_2028/v1655594329/carlgo11.com/posts/vpn.webp
   author: Richard Patterson
   url: https://www.flickr.com/photos/136770128@N07/40682389930
 ---
