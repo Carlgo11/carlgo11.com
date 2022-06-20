@@ -7,6 +7,12 @@
   <meta name="author" content="{{ site.author }}">
   <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="theme-color" content="#5CB85C">
+  <meta property="og:type" content="{% if page.layout == "post" %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: page.excerpt | strip_html }}">
+  <meta property="og:image" content="{{ page.image.src | default: site.social_image }}">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:creator" content="{{ site.author }}">
 
   <!-- DNS Prefetch external domains -->
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
@@ -25,15 +31,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.0/font/bootstrap-icons.min.css" integrity="sha512-yLNTU6YQWEtsM/WVkUqd2jRzzq5hmfFUMVvziVlkgC0R9HTElDtyF4DiWiBeMS36npvN+NWwrr764A4AWGcmQQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/css/main.css">
-
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="{{ page.title | default: site.title }}">
-  <meta property="twitter:creator" content="{{ site.author }}">
-  <meta property="twitter:site" content="carlgo11">
-  <meta property="twitter:image" content="{{ page.image.src | default: site.social_image }}">
-  <meta property="twitter:description" content="{{ page.description | default: page.excerpt | strip_html }}">
-  {% if page.name == "contact.html" %}<link rel="stylesheet" href="/css/contact.css">
-  {% elsif page.name == "about.html" %}<link rel="stylesheet" href="/css/about.css">
+  {% if page.name == "contact.html" %}
+  <link rel="stylesheet" href="/css/contact.css">
+  {% elsif page.name == "about.html" %}
+  <link rel="stylesheet" href="/css/about.css">
   {% endif %}
 
   <title>{% if page.title %}{{ page.title}} / {%endif%}{{ site.title }}</title>
@@ -89,10 +90,12 @@
   <div class="content-body">{{ content }}</div>
 
 </div>
-<script>if (("connection" in navigator) && navigator.connection.saveData) {
+<script type="application/javascript">
+  if (("connection" in navigator) && navigator.connection.saveData) {
     $('.background').remove();
     $('.head').remove();
-}</script>
+  }
+</script>
 <!-- Load other JS sources -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
