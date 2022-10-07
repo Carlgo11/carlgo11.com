@@ -1,2 +1,22 @@
-User-agent: *
+User-agent: adidxbot
+User-agent: 360Spider
+User-agent: 360Spider-Image
+User-agent: 360Spider-Video
+User-agent: Baiduspider-image
+User-agent: Baiduspider-news
+User-agent: Baiduspider-video
+User-agent: coccoc
+User-agent: coccocbot-image
+User-agent: coccocbot-web
+User-Agent: JikeSpider
+User-agent: Sosospider
+User-agent: Sogou blog
+User-agent: Sogou inst spider
+User-agent: Sogou News Spider
+User-agent: Sogou Orion spider
+User-agent: Sogou spider2
+User-agent: Sogou web spider
+User-agent: YoudaoBot
+Disallow: /
+User-Agent: *
 Allow: /
