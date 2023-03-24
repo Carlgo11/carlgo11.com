@@ -2,6 +2,8 @@
 layout: post
 category: internet security
 title: "TLS Everywhere! (Home edition)"
+image:
+  src: https://res.cloudinary.com/dbsfyc1ry/image/upload/v1679684072/carlgo11.com/posts/tls-everywhere.jpg
 ---
 
 For the past 10 years, there's been a drive to make web traffic be encrypted in transit. Partly fueled by Let's Encrypt, TLS is now supported by most public websites. In fact, w3techs.com reports that 82% of all tracked websites now serve HTTPS by default.[__¹__](https://w3techs.com/technologies/details/ce-httpsdefault)
