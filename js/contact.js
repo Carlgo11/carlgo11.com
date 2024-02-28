@@ -16,7 +16,7 @@ mailForm.addEventListener('submit', async (e) => {
   mailForm.style.display = 'none';
 
   const data = {
-    'response': c_token,
+    'token': c_token,
     'name': document.getElementById('name').value,
     'email': document.getElementById('email').value,
     'subject': document.getElementById('subject').value,
