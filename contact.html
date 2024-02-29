@@ -10,13 +10,10 @@ title: Contact
     <div id="form-success" class="alert alert-success alert-dismissible" role="alert">
       <h4 class="alert-heading">Email sent!</h4>
       <p>Thank you for your email.<br>I'll try to respond to you as soon as possible.</p>
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
     </div>
     <div id="form-error" class="alert alert-danger alert-dismissible" role="alert">
       <h4 class="alert-heading"><u><strong>Delivery unsuccessful</strong></u></h4>
-      <p>Something seems to be wrong with the your mail or our mail system.</p>
+      <p>Something seems to be wrong with the mail or our mail system.</p>
       <p>Try again later or contact me using one of the other channels listed under <i>Other Contact Info</i>.</p>
     </div>
     <div id="form-sending" class="text-center">
@@ -30,28 +27,28 @@ title: Contact
     <form id="mail-form">
       <div>
         <label for="name">Name:</label>
-        <input id="name" name="email_name" type="text" autocomplete="name" required>
+        <input id="name" name="name" type="text" autocomplete="name" required>
       </div>
 
       <div>
         <label for="email">Email address:</label>
-        <input id="email" name="email_address" type="email" autocomplete="email" required>
+        <input id="email" name="email" type="email" autocomplete="email" required>
       </div>
 
       <div>
         <label for="subject">Subject:</label>
-        <input id="subject" name="email_subject" type="text" required>
+        <input id="subject" name="subject" type="text" required>
       </div>
 
       <div>
         <label for="message">Message:</label>
-        <textarea id="message" name="email_body" cols="40" rows="10" required></textarea>
+        <textarea id="message" name="message" cols="40" rows="10" required></textarea>
       </div>
 
       <div id="captcha"></div>
 
       <div>
-        <button type="submit" class="btn btn-lg bg-success col-3">Send</button>
+        <button type="submit" id="submit" disabled="" class="btn btn-lg bg-success col-3">Send</button>
       </div>
     </form>
   </div>
@@ -65,9 +62,8 @@ title: Contact
         <li><a href="https://reddit.com/u/Carlgo11"><i class="bi bi-reddit"></i> @Carlgo11</a></li>
       </ul>
     </div>
-
   </div>
-
 </div>
+
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
 <script src="{{ site.baseurl }}/js/contact.js"></script>

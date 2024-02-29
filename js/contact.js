@@ -2,31 +2,35 @@ let c_token = null;
 window.onloadTurnstileCallback = function() {
   turnstile.render('#captcha', {
     sitekey: '0x4AAAAAAABavw7IIXAqu0yj',
-    callback: token => c_token = token
+    callback: (token) => {
+      c_token = token
+      document.getElementById('submit').disabled = false
+    }
   });
 };
 
-const mailForm = document.getElementById('mail-form');
-const sending = document.getElementById('form-sending');
-const sent = document.getElementById('form-success');
+function displayElement(element, displayStyle) {
+  document.getElementById(element).style.display = displayStyle;
+}
 
-mailForm.addEventListener('submit', async (e) => {
+async function handleSubmit(e) {
   e.preventDefault();
-  sending.style.display = 'block';
-  mailForm.style.display = 'none';
+  displayElement('mail-form', 'none');
+  displayElement('form-sending', 'block');
 
-  const data = {
-    'token': c_token,
-    'name': document.getElementById('name').value,
-    'email': document.getElementById('email').value,
-    'subject': document.getElementById('subject').value,
-    'message': document.getElementById('message').value
-  };
-  await fetch('https://mail.carlgo11.workers.dev', {
+  const formData = new FormData(mailForm);
+  formData.append('token', c_token);
+  const res = await fetch('https://mail.carlgo11.workers.dev', {
     method: 'POST',
-
-    body: JSON.stringify(data)
+    body: JSON.stringify(formData)
   });
-  sending.style.display = 'none';
-  sent.style.display = 'block';
-})
+  displayElement('form-sending', 'none');
+  if (res.status !== 201) {
+    console.error(await res.json());
+    displayElement('form-error', 'block');
+  } else
+    displayElement('form-success', 'block');
+}
+
+const mailForm = document.getElementById('mail-form');
+mailForm.addEventListener('submit', handleSubmit);
