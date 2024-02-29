@@ -5,14 +5,10 @@
 }
 
 #membership-logos {
-  display: flex;
-  justify-content: space-between;
-
-  & > div {
-    width: 76px;
-    text-align: center;
-    margin: 1rem 0;
-  }
+  display: grid;
+  justify-content: space-evenly;
+  grid-auto-flow: column;
+  width: 100%;
 }
 
 .membership-logo {
