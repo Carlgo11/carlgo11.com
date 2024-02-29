@@ -13,23 +13,18 @@
   <meta property="og:image" content="{{ page.image.src | default: site.social_image }}">
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:creator" content="{{ site.author }}">
-  
+
   <link rel="me" href="https://infosec.exchange/@Carlgo11"/>
 
   <!-- DNS Prefetch external domains -->
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://res.cloudinary.com">
-
-  <!-- Preload resources -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Quicksand:400">
-  <link rel="preload" as="style" href="/css/main.css">
 
   <!-- Icon -->
   <link rel="icon apple-touch-icon" href="{{ site.github.owner_gravatar_url }}" sizes="256x256">
 
   <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..600&family=Quicksand:wght@400&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.0/font/bootstrap-icons.min.css" integrity="sha512-yLNTU6YQWEtsM/WVkUqd2jRzzq5hmfFUMVvziVlkgC0R9HTElDtyF4DiWiBeMS36npvN+NWwrr764A4AWGcmQQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/css/main.css">
@@ -40,9 +35,6 @@
   {% endif %}
 
   <title>{% if page.title %}{{ page.title}} / {%endif%}{{ site.title }}</title>
-
-  <!-- Load JQuery in head for contact form -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 <picture>

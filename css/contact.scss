@@ -19,31 +19,14 @@
   }
 }
 
-.brand-logo {
-  color: #212529;
-
-  &::before {
-    margin-right: 10px;
-    font-family: 'Font Awesome 5 Brands';
-  }
-}
-
-.alert {
-  display: none;
-}
-
-.g-recaptcha {
-  margin-bottom: 10px;
-}
-
 #form-sending {
   display: none;
 }
-
-.spinner-border {
-  width: 5rem;
-  height: 5rem;
-  animation: spinner-border 1.7s linear infinite;
+#form-error {
+  display: none;
+}
+#form-success {
+  display: none;
 }
 
 @keyframes opacity {
@@ -81,6 +64,3 @@
   }
 }
 
-a.bg-success:focus, a.bg-success:hover, button.bg-success:focus, button.bg-success:hover {
-  background: #21c446 !important;
-}
