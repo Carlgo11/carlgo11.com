@@ -6,6 +6,7 @@ kramdown:
 theme: null
 excerpt_separator: "#"
 social_image: https://repository-images.githubusercontent.com/194316044/3de72580-a905-11e9-8dfc-563d74bbb052
+profile_img: https://avatars.githubusercontent.com/u/3535780?v=4
 exclude:
   - "Gemfile*"
   - Rakefile
